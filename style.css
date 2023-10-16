@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.logo {
+  /* margin: -62px; */
+
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+h3 {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 160px;
+}
+#enterData1, #enterData2, #enterData3 {
+  position: relative;
+  margin-top: 100px;
+  width: 50%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: fit-content;
+}
+.signUp {
+  margin-top: 16px;
+  position: relative;
+  
+  
+}
+.sign {
+  width: 50%;
+  border-style: hidden;
+  border-bottom: 1px solid;
+}
+.buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
