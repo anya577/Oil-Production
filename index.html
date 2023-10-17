@@ -14,10 +14,10 @@
       <tr>
         <th style="width: 20%;">Production</th>
         <th style="width: 30%;">raw materials</th>
-        <th style="width: 4%;">liter</th>
+        <th style="width: 4%;">Volume</th>
         <th style="width: 4%;">KG</th>
+        <th style="width: 4%;">liter</th>
         <th style="width: 4%;">temp</th>
-        <th style="width: 4%;">smth</th>
         <th style="width: 30%;">products made</th>
         <th>total kg</th>
       </tr>
@@ -338,7 +338,7 @@ for (let i = 0; i < tables.length; i++) {
 }
 
 
-// Function to add a new row
+//Function to add or delete rows
 let table = document.getElementById("enterData1");
 
 function addRow() {
@@ -354,7 +354,16 @@ function addRow() {
       cell.contentEditable = true;
     }
   }
+  document.getElementById("deleteRowButton1").addEventListener("click", function() {
+let table = document.getElementById("enterData1");
+ if (table.rows.length > 2) { // Ensure there are at least two rows (header + one data row) to delete
+  table.deleteRow(table.rows.length - 2); // Delete the last data row
+  } else {
+    alert("Cannot delete the last row.");
+  }
+});
 }
+
 //sum function
 
 
